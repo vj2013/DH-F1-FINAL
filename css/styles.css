@@ -7,3 +7,105 @@ Fondo Plomo
 background-color: #FAFAFA
 
 */
+
+/* Andrea */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.disabled{
+    display: none;
+}
+
+.d-flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.column-reverse{
+    flex-direction: column-reverse;
+}
+.row{
+    flex-direction: row;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+
+.color-blue{
+    color:  #242E53;
+    ;
+}
+
+.color-blue-opaco{
+    color:  #3F4868;
+    ;
+}
+.best{
+margin: 2rem 0;
+}
+
+.best h2{
+    padding: 3rem 0;
+}
+.card-text{
+    background-color: #FAFAFA;
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+    padding: 3rem 1rem;
+}
+.card-text p {
+    color: #B9B9C1;
+}
+.card-text h3{
+    margin:1rem 0;
+}
+.player{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lebron{
+    background-image: url("../img/lebron.png");
+}
+
+.botonMorado{
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 2rem;
+    border: none;
+}
+
+footer{
+    background: #1E1E26;
+    padding: 2rem 0;
+    /* text-align: center; */
+}
+
+.formulario input{
+    padding: 0.5rem;
+    border-radius: 50px;
+    border: none;
+}
+footer .listas{
+    padding: 1rem;
+    justify-content: space-between;
+    color: white;
+    font-weight: lighter;
+}
+footer li{
+    line-height: 2rem;
+}
