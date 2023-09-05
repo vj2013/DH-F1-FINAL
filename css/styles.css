@@ -7,3 +7,162 @@ Fondo Plomo
 background-color: #FAFAFA
 
 */
+
+/* Andrea */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.disabled{
+    display: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.color-blue{
+    color:  #242E53;
+    ;
+}
+
+.color-blue-opaco{
+    color:  #3F4868;
+    ;
+}
+.best{
+margin: 2rem 0;
+flex-direction: column;
+align-items: center;
+
+}
+
+.best h2{
+    padding: 3rem 0;
+}
+.card-text{
+    background-color: #FAFAFA;
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+    padding: 3rem 1rem;
+}
+.card-text p {
+    color: #B9B9C1;
+}
+.card-text h3{
+    margin:1rem 0;
+}
+.player{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sanyo{
+    background-image: url("../img/sanyo.png");
+}
+#lebron{
+    background-image: url("../img/lebron.png");
+}
+#navarro{
+    background-image: url("../img/navarro.png");
+}
+.botonMorado{
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    background: #1E1E26;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    
+}
+
+footer .all{
+    flex-direction: column-reverse;
+}
+
+.formulario input{
+    padding: 0.5rem;
+    border-radius: 50px;
+    border: none;
+    margin:1rem 0
+}
+
+footer .icon-logo{
+    flex-direction: column-reverse;
+    margin:1rem 0
+}
+
+footer .logo{
+    font-size: xx-large;
+    vertical-align: middle;
+}
+
+.icons {
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+footer .listas{
+    padding: 1rem;
+    justify-content: space-between;
+    color: white;
+    font-weight: lighter;
+    text-align: left;
+}
+
+footer li{
+    line-height: 1.5rem;
+}
+footer .copy{
+    margin-top:1rem;
+    font-size: small;
+}
+
+@media (min-width: 500px) {
+    .disabled{
+        display: block;
+    }
+    footer {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    footer .all{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .copy{
+        text-align: right;
+    }
+
+    footer .icon-logo{
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .icons, .logo{
+        margin: 0;
+    }
+    footer .listas{
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+}
