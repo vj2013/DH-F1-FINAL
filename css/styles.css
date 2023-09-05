@@ -22,20 +22,9 @@ background-color: #FAFAFA
 .d-flex{
     display: flex;
 }
-.column{
-    flex-direction: column;
-}
-.column-reverse{
-    flex-direction: column-reverse;
-}
+
 .row{
     flex-direction: row;
-}
-.justify-center{
-    justify-content: center;
-}
-.align-center{
-    align-items: center;
 }
 
 .color-blue{
@@ -49,6 +38,9 @@ background-color: #FAFAFA
 }
 .best{
 margin: 2rem 0;
+flex-direction: column;
+align-items: center;
+
 }
 
 .best h2{
@@ -77,35 +69,100 @@ margin: 2rem 0;
     margin-right: auto;
 }
 
+#sanyo{
+    background-image: url("../img/sanyo.png");
+}
 #lebron{
     background-image: url("../img/lebron.png");
 }
-
+#navarro{
+    background-image: url("../img/navarro.png");
+}
 .botonMorado{
     background-color: #8B48BF;
     color: white;
     border-radius: 50px;
     padding: 10px 2rem;
     border: none;
+    cursor: pointer;
 }
 
 footer{
     background: #1E1E26;
-    padding: 2rem 0;
-    /* text-align: center; */
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    
+}
+
+footer .all{
+    flex-direction: column-reverse;
 }
 
 .formulario input{
     padding: 0.5rem;
     border-radius: 50px;
     border: none;
+    margin:1rem 0
 }
+
+footer .icon-logo{
+    flex-direction: column-reverse;
+    margin:1rem 0
+}
+
+footer .logo{
+    font-size: xx-large;
+    vertical-align: middle;
+}
+
+.icons {
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
 footer .listas{
     padding: 1rem;
     justify-content: space-between;
     color: white;
     font-weight: lighter;
+    text-align: left;
 }
+
 footer li{
-    line-height: 2rem;
+    line-height: 1.5rem;
+}
+footer .copy{
+    margin-top:1rem;
+    font-size: small;
+}
+
+@media (min-width: 500px) {
+    .disabled{
+        display: block;
+    }
+    footer {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    footer .all{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .copy{
+        text-align: right;
+    }
+
+    footer .icon-logo{
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .icons, .logo{
+        margin: 0;
+    }
+    footer .listas{
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
 }
