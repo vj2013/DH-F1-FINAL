@@ -11,13 +11,12 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="logo">
-            <h3>sportit</h3>
+        <div class="cabecera d-flex">
+            <h3 class="d-flex img" ><img src="img/logo.png" alt="logo">sportit</h3>            
+            <i class="bi bi-list icono"></i>
         </div>
-        <div class="navbar">
-        <nav class="nav">
-            <ul class="nav-menu">
+        <nav class="disabled">
+            <ul class="nav-menu" type="none">
                 <li class="nav-menu-item"><a href="">Sports</a></li>
                 <li class="nav-menu-item"><a href="">Products</a></li>
                 <li class="nav-menu-item"><a href="">About Us</a></li>
@@ -25,43 +24,36 @@
                 <li class="nav-menu-item"><a href="">Community</a></li>
             </ul>
         </nav>
-        </div>
-        <div class="contact">
-            <button class="btnContact">Contact</button>
-        </div>
+        <button class="botonMorado disabled btnSombra">Contact</button>        
     </header>
     <main>
-        <div class="container-life">
-            <div class="caja-imgPlayer">
+        <div class="container-life d-flex">
+            <div class="caja-imgPlayer width-45">
                 <img src="img/player.png" alt="player">
             </div>
-            <div class="caja-playerTitle">
+            <div class="caja-playerTitle d-flex width-45">
                 <h1 class="title">LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
                 <h4 class="details">The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</h4>
-                <button class="btnContact">Contact</button>
+                <button class="botonMorado">Contact</button>
             </div>
         </div>
-        <div class="container-different">
-            <div class="caja-title">
-                <h2>What´s different between pros?</h2>
-            </div>
-            <div class="caja-details"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.</p></div>
+        <div class="container-different d-flex color-turquoise color-font">
+            <h2 class="width-45">What´s different between pros?</h2>
+            <p class="width-45">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.</p>
         </div>
-        <div class="container-differentDetails">
-            <div class="item-player"></div>
-            <div class="item-player"></div>
-            <div class="item-player"></div>
-        </div>
-        <div class="container-bestPlayer">
-            <div class="caja-detailsBestPlayer">
-                <h2>Get to know the best teams of the year</h2>
+        <div class="container-differentDetails d-flex">
+            <div class="item-player width-45">
+                <div class="fondo-purpe d-flex"><span class="botonMorado">01</span>Track company-wide progress</div>        
+                <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
             </div>
-            <div class="caja-btnGo">
-              <button class="btnGo">Go for it</button>  
-            </div>
+            <div class="item-player width-45">             
+                <div class="fondo-purpe d-flex"><span class="botonMorado">02</span>Advance built-in reports</div>             
+                <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p></div>
+            <div class="item-player width-45">
+                <div class="fondo-purpe d-flex"><span class="botonMorado">03</span>Everything you need in one place</div>              
+                <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p></div>
         </div>
-        <div class="team"></div>
-        <section class="d-flex  best">
+        <section class="d-flex best">
             <h2 class="color-blue">Best of the month</h2>
             <div class="d-flex">
                 <div class="card disabled">
@@ -88,8 +80,12 @@
             </div>
             <button class="botonMorado">More</button>
         </section>
+        <div class="container-bestPlayer d-flex color-turquoise color-font">
+            <h2 class="width-45">Get to know the best teams of the year</h2>
+            <button class="btnGo">Go for it</button> 
+        </div>
     </main>
-    <footer class="">
+    <footer>
         <div class="d-flex all">
             <div class="d-flex icon-logo">
                 <p class="logo"><img src="./img/logo.png" alt="logo"/> sportfit</p>
@@ -111,16 +107,13 @@
                 <ul type="none">
                     <li>Trainning</li>
                     <li>Community</li>
-                    <li>Privacy Policy</li>
-                   
+                    <li>Privacy Policy</li>                   
                 </ul>
             </div>
-            <!-- <div> -->
-                <form method="#" class="formulario">
-                    <input type="text" placeholder="Update in your box">
-                    <button type="submit" class="botonMorado">Go</button>
-                </form>
-            <!-- </div> -->
+            <form class="formulario">
+                <input type="text" placeholder="Update in your box">
+                <button type="submit" class="botonMorado">Go</button>
+            </form>
         </div>
         <p class="copy">Copyright 2020. All Rights Reserved</p>
     </footer>    
