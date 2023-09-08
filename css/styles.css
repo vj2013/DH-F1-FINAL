@@ -30,7 +30,6 @@ header .img{
 header .cabecera{
     justify-content: space-between;
     align-items: center;
-    /*margin: 5% 10%;*/
 }
 header h3{
     display: grid;
@@ -40,12 +39,17 @@ header h3{
     font-size: 50px;
 }
 .nav-menu-item{    
-    margin: 10px;
+    margin: 10px;    
 }
-a:link, a:visited, a:active {
+.nav-menu-item a {
     text-decoration:none;
-    color: black;
+    color: #242E52;
 }
+.nav-menu-item a:hover {
+    color: #242E5299;
+}
+
+
 .btnSombra{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
@@ -148,7 +152,9 @@ margin: 1rem 0;
 flex-direction: column;
 align-items: center;
 }
-
+.best .botonMorado:hover{
+    background-color: #8B48BFB2;
+}
 .botonNumero{
     background-color: #8B48BF;
     color: white;
@@ -251,6 +257,7 @@ footer li{
 footer .copy{
     margin-top:1rem;
     font-size: small;
+    color: #8C8C94;
 }
 
 @media (min-width: 500px) {
@@ -273,7 +280,7 @@ footer .copy{
         display: flex;        
     }
     .nav-menu{
-       gap: 1rem; 
+        gap: 1rem;
     }
     .container-life{
         justify-content: space-between;
