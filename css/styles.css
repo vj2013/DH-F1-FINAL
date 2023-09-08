@@ -1,22 +1,135 @@
-/*
-Fondo morado
-background-color: #8B48BF;
-color: white;
 
-Fondo Plomo
-background-color: #FAFAFA
-
-*/
-
-/* Andrea */
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Be Vietnam';
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 .disabled{
     display: none;
+}
+.color-turquoise{
+    background-color: #3CDDF3;
+}
+.color-font{
+    color: white;
+}
+.fondo-purpe{
+    background:rgb(139, 72, 191, 0.3);
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1em 0 0 1em;
+}
+header{
+    padding: 2rem 4rem;
+}
+header .img{
+    gap: 10px;
+    align-items: center;
+}
+header .cabecera{
+    justify-content: space-between;
+    align-items: center;
+}
+header h3{
+    display: grid;
+    place-items: center;    
+}
+.icono{
+    font-size: 50px;
+}
+.nav-menu-item{    
+    margin: 10px;    
+}
+.nav-menu-item a {
+    text-decoration:none;
+    color: #242E52;
+}
+.nav-menu-item a:hover {
+    color: #242E5299;
+}
+
+
+.btnSombra{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.container-life{
+    justify-content: center;    
+    flex-wrap: wrap;
+    padding: 3rem;
+    gap: 4rem;
+}
+.caja-imgPlayer img{
+    width: 100%;
+}
+
+.caja-playerTitle{
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+}
+.caja-playerTitle .title{
+    font-size: 50px;
+    font-weight: 700;
+    color: #232C50;
+    line-height: 3.5rem;
+}
+.caja-playerTitle .details{
+    font-size: 16.5px;
+    font-weight: 500;
+}
+
+.btnContact{
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 1em;
+    padding: 10px 20px;
+}
+.container-different{    
+    flex-wrap: wrap;
+    padding: 45px 20px;
+    gap: 3rem;
+}
+.container-different h2{
+    font-size: 36px;
+    line-height: 3rem;
+}
+.container-different p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.item-player p {
+    color: #B9B9C1;
+    margin:1.5rem 1rem;
+}
+.container-bestPlayer{
+    flex-wrap: wrap;
+    padding: 45px 90px;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.container-bestPlayer h2{
+    font-size: 36px;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.container-differentDetails{
+    flex-wrap: wrap;
+    padding: 4rem 0 0 2rem;
+}
+
+.btnGo{
+    background-color: #232C50;
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 10px 2rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .d-flex{
@@ -29,22 +142,31 @@ background-color: #FAFAFA
 
 .color-blue{
     color:  #242E53;
-    ;
 }
 
 .color-blue-opaco{
     color:  #3F4868;
-    ;
 }
 .best{
-margin: 2rem 0;
+margin: 1rem 0;
 flex-direction: column;
 align-items: center;
-
+}
+.best .botonMorado:hover{
+    background-color: #8B48BFB2;
+}
+.botonNumero{
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
 }
 
 .best h2{
     padding: 3rem 0;
+    font-size: 39px;
+    line-height: 3rem;
 }
 .card-text{
     background-color: #FAFAFA;
@@ -135,11 +257,64 @@ footer li{
 footer .copy{
     margin-top:1rem;
     font-size: small;
+    color: #8C8C94;
 }
 
 @media (min-width: 500px) {
     .disabled{
         display: block;
+    }
+    .width-45{
+        width:45%;
+    }
+    
+
+    .icono{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+        padding: 4rem 8rem;
+    }
+    header, .nav-menu{
+        display: flex;        
+    }
+    .nav-menu{
+        gap: 1rem;
+    }
+    .container-life{
+        justify-content: space-between;
+        padding: 4rem 8rem;
+        align-items: center;
+    }
+
+    .container-different, .container-bestPlayer{
+        background: #8B48BF;
+        justify-content: space-between;
+        padding: 4rem 8rem;
+        align-items: center;
+    }
+    .container-differentDetails{
+        background: #FAFAFA;
+        justify-content:center;
+        gap: 4rem;
+    }
+    .fondo-purpe{
+        background-color: transparent;
+    }
+    .item-player p{
+        padding: 0 4rem;
+    }
+    .container-bestPlayer h2{
+        text-align: start;
+        padding: 2rem;
+    }
+    .best{
+        padding: 2rem 3rem 8rem;
+    }
+    .btnGo{
+        background-color: white;
+        color: #8B48BF;        
     }
     footer {
         padding-left: 7rem;
